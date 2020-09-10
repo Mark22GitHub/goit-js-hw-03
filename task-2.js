@@ -1,8 +1,5 @@
 const countProps = function (obj) {
-    
-  const key = Object.keys(obj);
-
-  return key.length;
+  return Object.keys(obj).length;
 };
 
 console.log(countProps({})); // 0
