@@ -99,7 +99,6 @@
 
 //  ==========================================
 
-
 // ==================================================
 
 // ==========Module-3 task-3(2)========
@@ -162,99 +161,55 @@
 
 // ==================================================
 
-// // =======GOIT-JS-HW-03========
+// ==================================================
 
-
-// // ========task-7(optional).js=========
-
-
-// // Напиши скрипт управления личным кабинетом интернет банка.Есть объект account в котором необходимо реализовать методы для работы с балансом и историей транзакций.
-
-// /*
-//  * Типов транзацкий всего два.
-//  * Можно положить либо снять деньги со счета.
-//  */
-// const Transaction = {
-//   DEPOSIT: "deposit",
-//   WITHDRAW: "withdraw",
-// };
-
-// /*
-//  * Каждая транзакция это объект со свойствами: id, type и amount
-//  */
-
-// const account = {
-//   // Текущий баланс счета
-//   balance: 0,
-
-//   // История транзакций
-//   transactions: [],
-
-//   /*
-//    * Метод создает и возвращает объект транзакции.
-//    * Принимает сумму и тип транзакции.
-//    */
-//   createTransaction(amount, type) {
-//     const transaction = { amount: amount, type: type };
-//     return transaction;
-//   },
-
-//   /*
-//    * Метод отвечающий за добавление суммы к балансу.
-//    * Принимает сумму танзакции.
-//    * Вызывает createTransaction для создания объекта транзакции
-//    * после чего добавляет его в историю транзакций
-//    */
-//   deposit(amount) {
-//     const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
-//     this.transactions.push(transaction);
-
-//     return (this.balance += amount);
-//   },
-
-//   /*
-//    * Метод отвечающий за снятие суммы с баланса.
-//    * Принимает сумму танзакции.
-//    * Вызывает createTransaction для создания объекта транзакции
-//    * после чего добавляет его в историю транзакций.
-//    *
-//    * Если amount больше чем текущий баланс, выводи сообщение
-//    * о том, что снятие такой суммы не возможно, недостаточно средств.
-//    */
-//   withdraw(amount) {
-//     if (this.balance >= amount) {
-//       const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
-//       this.transactions.push(transaction);
-//       return this.blance -= amount;
+// const getMeEven = function (...args) {
+//   for (let i = 0; i <= args.length; i += 1) {
+//     if (args[i] % 2 === 0) {
+//       console.log(args[i]);
 //     }
-//     return "Not enough money on your balance";
-//   },
-
-//   /*
-//    * Метод возвращает текущий баланс
-//    */
-//   getBalance() {},
-
-//   /*
-//    * Метод ищет и возвращает объект транзации по id
-//    */
-//   getTransactionDetails(id) {},
-
-//   /*
-//    * Метод возвращает количество средств
-//    * определенного типа транзакции из всей истории транзакций
-//    */
-//   getTransactionTotal(type) {},
+//   }
 // };
 
-// console.log(account.createTransaction(500, Transaction.DEPOSIT));
-
-// console.log(account.deposit(4000));
-
-// console.log(account.deposit(3000));
-
-// console.log(account.withdraw(1000));
-
-
+// getMeEven(1, 2, 3, 4, 5, 6, 7, 8);
 
 // ==================================================
+
+// / ____________________________________;
+
+// Сделайте функцию isNumberInRange, которая параметром принимает число и проверяет, что оно
+// больше нуля и меньше 10. Если это так - пусть функция возвращает true, если не так - false.
+
+// const isNumberInRange = function (n) {
+//   return n > 0 && n < 10;
+// };
+
+// console.log(isNumberInRange(5));
+// console.log(isNumberInRange(20));
+// ____________________________________;
+// Сделайте функцию inArray, которая определяет, есть в массиве элемент с заданным текстом или нет.
+// Функция первым параметром должна принимать текст элемента, а вторым - массив, в котором делается поиск.
+// Функция должна возвращать true или false
+// var str = "яблоbко";
+// var arr = ["банан", "яблоко", "персик"];
+
+// var str = "яблоbко";
+// var arr = ["банан", "яблоко", "персик"];
+
+// const inArray = function (str, arr) {
+//   //   if (arr.includes(str)) {
+//   //     return true;
+//   //   } else {
+//   //     return false;
+//   //     }
+//   return arr.includes(str);
+// };
+
+// console.log(inArray(str, arr));
+
+// _____________________________________________;
+// Есть массив уникальных чисел uniqueNumbers.
+// Написать функцию, addUniqueNumbers(...),
+// которая получает произвольное кол-во чисел как аргументы,
+// и добавляет в массив uniqueNumbers только уникальные,
+// а те которые в массиве уже есть игнорирует.
