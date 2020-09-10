@@ -213,3 +213,16 @@
 // которая получает произвольное кол-во чисел как аргументы,
 // и добавляет в массив uniqueNumbers только уникальные,
 // а те которые в массиве уже есть игнорирует.
+
+// let numbers = [10, 20, 30, 40, 50];
+
+// const addUniqueNumbers = function (...nums) {
+//   for (let num of nums) {
+//     if (!numbers.includes(num)) {
+//       numbers.push(num);
+//     }
+//   }
+//   return numbers;
+// };
+
+// console.log(addUniqueNumbers(10, 20, 30, 40, 50, 60, 70, 80, 90, 100));
